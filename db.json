@@ -1,0 +1,18 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "username": "Nikolas",
+            "password": "niko123" 
+        },
+        {
+            "id": 2,
+            "username": "Henrik",
+            "password": "henrik20" 
+        }
+    ],
+
+    "packets": [
+
+    ]
+}
