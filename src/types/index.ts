@@ -1,0 +1,28 @@
+export interface User {
+    id: number;
+    username: string;
+    password?: string;
+    fullName: string;
+    phoneNumber: string;
+    balance: number;
+}
+
+export interface DataPackage {
+    id: number;
+    name: string;
+    description: string;
+    quota: number;
+    price: number;
+    activeDays: number;
+}
+
+export interface Transaction {
+    id: number;
+    userId: number;
+    packageId: number;
+    packageName: string;
+    price: number;
+    date: string;      
+    expiryDate: string;
+    status: 'success' | 'failed' | 'pending';
+}

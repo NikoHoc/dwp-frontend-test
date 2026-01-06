@@ -1,13 +1,12 @@
-
-import React from 'react';
-import { DatePicker } from 'antd';
+import { AuthProvider } from './context/AuthContext';
+import AppRoutes from './routes/AppRoutes';
 
 function App() {
-
   return (
     <>
-      <p className="">test nikolas hai</p>
-      <DatePicker />
+      <AuthProvider>
+        <AppRoutes />
+      </AuthProvider>
     </>
   )
 }

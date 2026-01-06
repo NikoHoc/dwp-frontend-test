@@ -1,18 +1,58 @@
 {
-    "users": [
+    "customers": [
         {
             "id": 1,
-            "username": "Nikolas",
-            "password": "niko123" 
+            "username": "nikohoc",
+            "password": "nikohoc123",
+            "fullName": "Niko Hoc",
+            "phoneNumber": "08123456789",
+            "balance": 150000
         },
         {
             "id": 2,
-            "username": "Henrik",
-            "password": "henrik20" 
+            "username": "henrik",
+            "password": "henrik123",
+            "fullName": "Henrik Owen",
+            "phoneNumber": "08198765432",
+            "balance": 50000
         }
     ],
-
-    "packets": [
-
+    "packages": [
+        {
+            "id": 1,
+            "name": "Freedom Internet 10GB",
+            "description": "Kuota Utama 10GB berlaku 30 hari",
+            "quota": 10,
+            "price": 50000,
+            "activeDays": 30
+        },
+        {
+            "id": 2,
+            "name": "Freedom Internet 25GB",
+            "description": "Kuota Utama 25GB + Streaming 5GB",
+            "quota": 25,
+            "price": 100000,
+            "activeDays": 30
+        },
+        {
+            "id": 3,
+            "name": "Daily Unlimited 1GB",
+            "description": "Kuota 1GB per hari selama 7 hari",
+            "quota": 7,
+            "price": 25000,
+            "activeDays": 7
+        }
+    ],
+    "transactions": [
+        {
+            "id": 1,
+            "userId": 1,
+            "packageId": 1,
+            "packageName": "Freedom Internet 25GB",
+            "price": 50000,
+            "date": "2023-10-25T10:00:00Z",
+            "expiryDate": "2023-11-24T10:00:00Z", 
+            "status": "success"
+        }
     ]
 }
