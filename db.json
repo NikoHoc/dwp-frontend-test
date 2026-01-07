@@ -6,7 +6,7 @@
       "password": "nikohoc123",
       "fullName": "Niko Hoc",
       "phoneNumber": "08123456789",
-      "balance": 70000
+      "balance": 80000
     },
     {
       "id": "2",
@@ -71,6 +71,15 @@
       "date": "2026-01-07T18:55:50.802Z",
       "expiryDate": "2026-01-14T18:55:50.802Z",
       "status": "success"
+    },
+    {
+      "id": "afb2",
+      "userId": "1",
+      "packageName": "Top Up Saldo",
+      "price": 10000,
+      "date": "2026-01-07T20:48:32.227Z",
+      "status": "success",
+      "category": "topup"
     }
   ]
 }

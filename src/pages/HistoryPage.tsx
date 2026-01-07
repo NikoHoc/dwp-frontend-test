@@ -54,7 +54,7 @@ const HistoryPage = () => {
     ];
 
     return (
-        <div className="min-h-screen p-4 font-poppins" style={{ backgroundColor: "oklch(27.9% 0.041 260.031)" }}>
+        <div className="min-h-screen p-4 font-poppins">
             {contextHolder}
             <Navbar onLogout={handleLogout} />
             

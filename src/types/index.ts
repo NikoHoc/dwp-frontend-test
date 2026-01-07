@@ -19,10 +19,11 @@ export interface DataPackage {
 export interface Transaction {
     id: number;
     userId: number;
-    packageId: number;
+    packageId?: number;
     packageName: string;
     price: number;
     date: string;      
-    expiryDate: string;
+    expiryDate?: string;
+    category?: 'purchase' | 'topup';
     status: 'success' | 'failed' | 'pending';
 }

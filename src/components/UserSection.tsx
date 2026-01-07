@@ -1,4 +1,4 @@
-import { UserOutlined, WalletOutlined, HistoryOutlined } from '@ant-design/icons';
+import { UserOutlined, WalletOutlined, HistoryOutlined, PlusCircleOutlined } from '@ant-design/icons';
 import { Avatar, Card, Statistic } from "antd";
 import { formatRupiah } from "../utils/formatRupiah";
 import type { User } from '../types';
@@ -13,8 +13,8 @@ const UserSection = ({ user }: UserSectionProps) => {
         <div className="max-w-5xl mx-auto mb-4">
             <div className='flex flex-row justify-between'>
                 <h1 className='font-bold text-white text-2xl mb-2'>Welcome Back 👋</h1>
-                <Link 
-                    to="/history" 
+                <Link
+                    to="/history"
                     className="text-white hover:text-blue-300 transition-colors flex items-center gap-2 text-sm font-medium"
                 >
                     <HistoryOutlined /> Lihat Riwayat Transaksi
@@ -27,26 +27,34 @@ const UserSection = ({ user }: UserSectionProps) => {
                         <div className="flex flex-col">
                             <h1 className="text-lg font-bold leading-tight">{user?.fullName}</h1>
                             <p>Status: aktif</p>
-                        </div>                        
+                        </div>
                     </div>
-                    <Statistic 
+                    <Statistic
                         title={
                             <span className="flex items-center gap-2">
                                 <UserOutlined />
                                 Nomor Telepon
                             </span>
-                        } 
-                        value={user?.phoneNumber} 
+                        }
+                        value={user?.phoneNumber}
                         formatter={(value) => String(value)} />
-                    <Statistic 
+
+                    <Statistic
                         title={
                             <span className="flex items-center gap-2">
                                 <WalletOutlined />
                                 Balance
+                                <Link
+                                    to="/top-up"
+                                    className="text-md font-bold w-fit "
+                                >
+                                    <PlusCircleOutlined />
+                                </Link>
                             </span>
                         }
-                        value={formatRupiah(user.balance)} />
-                </div>             
+                        value={formatRupiah(user.balance)} 
+                    />
+                </div>
             </Card>
         </div>
     )

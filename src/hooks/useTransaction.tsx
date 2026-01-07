@@ -32,6 +32,7 @@ export const useTransaction = () => {
                 price: item.price,
                 date: new Date().toISOString(),
                 expiryDate: calculateExpiryDate(item.activeDays),
+                category: 'purchase',
                 status: 'success'
             });
 
@@ -50,8 +51,40 @@ export const useTransaction = () => {
         }
     };
 
+    const topUpBalance = async (amount: number) => {
+        if (!user) return;
+        setLoading(true);
+
+        try {
+            const newBalance = user.balance + amount;
+            
+            const updatedUser = await customerService.updateBalance(user.id, newBalance);
+
+            await transactionService.createTransaction({
+                userId: user.id,
+                packageName: 'Top Up Saldo',
+                price: amount,
+                date: new Date().toISOString(),
+                status: 'success',
+                category: 'topup'
+            });
+
+            login(updatedUser);
+            messageApi.success(`Top Up Rp ${amount.toLocaleString()} Berhasil!`);
+            
+            setTimeout(() => {
+                navigate('/dashboard');
+            }, 1500);
+        } catch (error) {
+            messageApi.error((error as TypeError).message || "Top Up Gagal");
+        } finally {
+            setLoading(false);
+        }
+    };
+
     return { 
         purchasePackage, 
+        topUpBalance,
         loading, 
         contextHolder 
     };
