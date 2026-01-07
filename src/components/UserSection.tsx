@@ -9,8 +9,8 @@ type UserSectionProps = {
 
 const UserSection = ({ user }: UserSectionProps) => {
     return (
-        <div className="max-w-5xl mx-auto">
-            <h1 className='font-bold text-white text-2xl mb-4'>Wellcome Back 👋</h1>
+        <div className="max-w-5xl mx-auto mb-4">
+            <h1 className='font-bold text-white text-2xl mb-2'>Wellcome Back 👋</h1>
             <Card className="shadow-lg rounded-xl border-none">
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mt-2">
                     <div className="flex items-center gap-3">

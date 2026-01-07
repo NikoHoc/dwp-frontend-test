@@ -1,8 +1,9 @@
 import { useAuth } from "../context/AuthContext";
-import Navbar from "../components/Navbar";
-import UserSection from "../components/UserSection";
 import { useLogout } from "../hooks/useLogout";
 import { Spin } from "antd";
+import Navbar from "../components/Navbar";
+import UserSection from "../components/UserSection";
+import PackagesSection from "../components/PackagesSection";
 
 const DashboardPage = () => {
     const { user } = useAuth(); 
@@ -17,7 +18,7 @@ const DashboardPage = () => {
             {contextHolder}
             <Navbar onLogout={handleLogout} />
             <UserSection user={user} />
-            
+            <PackagesSection />
         </div>
     );
 };
