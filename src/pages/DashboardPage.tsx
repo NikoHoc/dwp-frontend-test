@@ -1,8 +1,23 @@
+import { useAuth } from "../context/AuthContext";
+import Navbar from "../components/Navbar";
+import UserSection from "../components/UserSection";
+import { useLogout } from "../hooks/useLogout";
+import { Spin } from "antd";
+
 const DashboardPage = () => {
+    const { user } = useAuth(); 
+    const { handleLogout, contextHolder } = useLogout();
+
+    if (!user) {
+        return <div className="flex justify-center items-center h-screen"><Spin size="large" /></div>;
+    }
+
     return (
-        <div className="p-8">
-            <h1 className="text-2xl font-bold">Dashboard Customer</h1>
-            <p>Selamat datang di dashboard!</p>
+        <div className="min-h-screen p-4 font-poppins">
+            {contextHolder}
+            <Navbar onLogout={handleLogout} />
+            <UserSection user={user} />
+            
         </div>
     );
 };
