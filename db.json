@@ -6,7 +6,7 @@
       "password": "nikohoc123",
       "fullName": "Niko Hoc",
       "phoneNumber": "08123456789",
-      "balance": 80000
+      "balance": 580000
     },
     {
       "id": "2",
@@ -25,61 +25,6 @@
       "quota": 10,
       "price": 50000,
       "activeDays": 30
-    },
-    {
-      "id": "2",
-      "name": "Freedom Internet 25GB",
-      "description": "Kuota Utama 25GB + Streaming 5GB",
-      "quota": 25,
-      "price": 100000,
-      "activeDays": 30
-    },
-    {
-      "id": "3",
-      "name": "Daily Unlimited 1GB",
-      "description": "Kuota 1GB per hari selama 7 hari",
-      "quota": 7,
-      "price": 25000,
-      "activeDays": 7
-    },
-    {
-      "id": "4",
-      "name": "Weekly 10GB",
-      "description": "Kuota utama 10GB s berlaku 7 hari",
-      "quota": 10,
-      "price": 30000,
-      "activeDays": 7
-    }
-  ],
-  "transactions": [
-    {
-      "id": "1",
-      "userId": 1,
-      "packageId": 1,
-      "packageName": "Freedom Internet 25GB",
-      "price": 50000,
-      "date": "2023-10-25T10:00:00Z",
-      "expiryDate": "2023-11-24T10:00:00Z",
-      "status": "success"
-    },
-    {
-      "id": "517f",
-      "userId": "1",
-      "packageId": "4",
-      "packageName": "Weekly 10GB",
-      "price": 30000,
-      "date": "2026-01-07T18:55:50.802Z",
-      "expiryDate": "2026-01-14T18:55:50.802Z",
-      "status": "success"
-    },
-    {
-      "id": "afb2",
-      "userId": "1",
-      "packageName": "Top Up Saldo",
-      "price": 10000,
-      "date": "2026-01-07T20:48:32.227Z",
-      "status": "success",
-      "category": "topup"
     }
   ]
 }

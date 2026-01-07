@@ -1,5 +1,5 @@
 export interface User {
-    id: number;
+    id: string;
     username: string;
     password?: string;
     fullName: string;
@@ -17,8 +17,8 @@ export interface DataPackage {
 }
 
 export interface Transaction {
-    id: number;
-    userId: number;
+    id: string;
+    userId: string;
     packageId?: number;
     packageName: string;
     price: number;

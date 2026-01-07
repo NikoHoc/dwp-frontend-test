@@ -17,7 +17,7 @@ export const transactionService = {
         return await response.json();
     },
 
-    getHistoryByUserId: async (userId: number): Promise<Transaction[]> => {
+    getHistoryByUserId: async (userId: string): Promise<Transaction[]> => {
         const response = await fetch(`${BASE_URL}/transactions?userId=${userId}&_sort=date&_order=desc`);
         
         if (!response.ok) throw new Error("Gagal mengambil riwayat transaksi");

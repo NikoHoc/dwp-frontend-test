@@ -15,6 +15,7 @@ const HistoryPage = () => {
     useEffect(() => {
         getHistory();
     }, []);
+    console.log(history)
 
     const columns = [
         {
@@ -40,6 +41,12 @@ const HistoryPage = () => {
             dataIndex: 'expiryDate',
             key: 'expiryDate',
             render: (text: string) => formatDate(text),
+        },
+        {
+            title: 'Kategori',
+            dataIndex: 'category',
+            key: 'category',
+            render: (text: string) => <span className="font-semibold">{text}</span>,
         },
         {
             title: 'Status',
