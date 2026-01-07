@@ -3,9 +3,9 @@ import { Table, Card, Tag } from 'antd';
 import { ArrowLeftOutlined } from '@ant-design/icons';
 import { Link } from 'react-router';
 import { useHistory } from '../hooks/useHistory';
-import { formatRupiah } from '../utils/formatRupiah';
-import Navbar from '../components/Navbar';
 import { useLogout } from '../hooks/useLogout';
+import Navbar from '../components/Navbar';
+import { formatRupiah } from '../utils/formatRupiah';
 import { formatDate } from '../utils/formatDate';
 
 const HistoryPage = () => {

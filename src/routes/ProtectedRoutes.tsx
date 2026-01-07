@@ -1,7 +1,7 @@
 import { Navigate, Outlet } from 'react-router';
 import { useAuth } from '../context/AuthContext';
-import Swal from 'sweetalert2';
-import { useEffect } from 'react';
+// import Swal from 'sweetalert2';
+// import { useEffect } from 'react';
 
 const ProtectedRoute = () => {
     const { isAuthenticated } = useAuth();

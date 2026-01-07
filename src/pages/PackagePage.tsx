@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { Modal, Skeleton } from "antd";
 import { useNavigate, useParams } from "react-router";
+import { Modal, Skeleton } from "antd";
 import type { DataPackage } from "../types";
 import { useTransaction } from "../hooks/useTransaction";
 import { packageService } from "../api/packages";
