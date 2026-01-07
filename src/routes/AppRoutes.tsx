@@ -4,6 +4,7 @@ import DashboardPage from "../pages/DashboardPage"
 import PackagePage from "../pages/PackagePage";
 import ProtectedRoute from "./ProtectedRoutes";
 import NotFoundPage from "../pages/NotFoundPage";
+import HistoryPage from "../pages/HistoryPage";
 
 const AppRoutes = () => {
     return (
@@ -13,6 +14,7 @@ const AppRoutes = () => {
             <Route element={<ProtectedRoute />}>
                 <Route path="/dashboard" element={<DashboardPage />} />
                 <Route path="/package/:packageId" element={<PackagePage />} />
+                <Route path="/history" element={<HistoryPage />} />
             </Route>
 
             <Route path="/" element={<Navigate to="/login" replace />} />

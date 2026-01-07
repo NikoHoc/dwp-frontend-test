@@ -16,5 +16,13 @@ export const transactionService = {
         if (!response.ok) throw new Error("Gagal membuat transaksi");
 
         return await response.json();
+    },
+
+    getHistoryByUserId: async (userId: number): Promise<Transaction[]> => {
+        const response = await fetch(`${BASE_URL}/transactions?userId=${userId}&_sort=date&_order=desc`);
+        
+        if (!response.ok) throw new Error("Gagal mengambil riwayat transaksi");
+        
+        return await response.json();
     }
 };

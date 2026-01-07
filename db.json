@@ -6,7 +6,7 @@
       "password": "nikohoc123",
       "fullName": "Niko Hoc",
       "phoneNumber": "08123456789",
-      "balance": 100000
+      "balance": 70000
     },
     {
       "id": "2",
@@ -63,13 +63,13 @@
       "status": "success"
     },
     {
-      "id": "fbce",
-      "userId": 1,
-      "packageId": "1",
-      "packageName": "Freedom Internet 10GB",
-      "price": 50000,
-      "date": "2026-01-07T16:54:37.211Z",
-      "expiryDate": "2026-02-06T16:54:37.212Z",
+      "id": "517f",
+      "userId": "1",
+      "packageId": "4",
+      "packageName": "Weekly 10GB",
+      "price": 30000,
+      "date": "2026-01-07T18:55:50.802Z",
+      "expiryDate": "2026-01-14T18:55:50.802Z",
       "status": "success"
     }
   ]

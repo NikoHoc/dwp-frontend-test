@@ -13,7 +13,7 @@ const PackagesSection = () => {
 
     return (
         <div className="max-w-5xl mx-auto">
-            <h1 className='font-bold text-white text-2xl mb-2'>Packages</h1>
+            <h1 className='font-bold text-white text-2xl mb-2'>Available Packages</h1>
             {loading ? (
                 <div className="p-4 bg-white rounded-xl">
                    <Skeleton active paragraph={{ rows: 4 }} />
