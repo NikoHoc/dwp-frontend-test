@@ -11,5 +11,13 @@ export const packageService = {
         }
         
         return await response.json();
+    },
+
+    getPackageById: async (id: string): Promise<DataPackage | null> => {
+        const response = await fetch(`${BASE_URL}/packages/${id}`);
+
+        if (!response.ok) return null;
+        
+        return await response.json();
     }
 };

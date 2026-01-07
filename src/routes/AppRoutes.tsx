@@ -12,7 +12,7 @@ const AppRoutes = () => {
             
             <Route element={<ProtectedRoute />}>
                 <Route path="/dashboard" element={<DashboardPage />} />
-                <Route path="/package/:id" element={<PackagePage />} />
+                <Route path="/package/:packageId" element={<PackagePage />} />
             </Route>
 
             <Route path="/" element={<Navigate to="/login" replace />} />
