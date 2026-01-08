@@ -27,7 +27,7 @@ export const useTransaction = () => {
 
             await transactionService.createTransaction({
                 userId: user.id,
-                packageId: item.id,
+                packageId: Number(item.id),
                 packageName: item.name,
                 price: item.price,
                 date: new Date().toISOString(),
