@@ -2,6 +2,7 @@
 
 ## Waktu Pengerjaan (WITA)
 start: 5 Januari - 8 Januari 2026
+<br>
 detail:
 - 5 Januari:
     - 21:00 - 21:30 - > memahami soal, dan instalasi & setup project
